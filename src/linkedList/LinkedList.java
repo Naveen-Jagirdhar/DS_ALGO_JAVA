@@ -3,7 +3,6 @@ package linkedList;
 public class LinkedList {
 
     static Node head;
-
     /* insertion of node in linkedList */
     static void insert(int value) {
         Node newNode = new Node();
@@ -18,6 +17,7 @@ public class LinkedList {
             temp.setNext(newNode);
         }
     }
+    /* print linkedList */
     static void print() {
         Node temp = head;
         while (temp !=null) {
@@ -25,6 +25,7 @@ public class LinkedList {
             temp = temp.getNext();
         }
     }
+    /* print linkedList reverse */
     static void printReverse() {
         Node temp = head;
         Node current = null ,previous = null;
@@ -37,6 +38,7 @@ public class LinkedList {
         }
         print();
     }
+    /* print linkedList recursion */
     static void printRecursion(Node p) {
         if (p == null) {
             return;
@@ -45,6 +47,7 @@ public class LinkedList {
         p = p.getNext();
         printRecursion(p);
     }
+    /* print linkedList recursion reverse */
     static void printRecursionReverse(Node p) {
         if (p == null) {
             return;
